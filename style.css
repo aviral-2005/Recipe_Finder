@@ -1,6 +1,6 @@
 :root {
-    --Background: #F8F9F4;
-    --Primary: #7BAE7F;
+    --Background: #f1f6df;
+    --Primary: #7bae7f;
     --Buttons: #2F5D50;
     --Text: #2B2B2B;
 }
@@ -11,20 +11,51 @@ body {
     background-color: var(--Background);
     color: var(--Text);
 }
-img{
+
+img {
     border-radius: 50%;
     padding-top: 10px;
 }
+
 .header {
     display: flex;
     /* places items horizontally */
     align-items: center;
     /* centers them vertically */
-    
+
     /* adds space between logo and text */
     justify-content: center;
     gap: 10px;
     padding: 10px;
-    background-color: var(--Primary);
-    text-decoration-color:var(--Text);
+    background-color: #84b088cd;
+    text-decoration-color: var(--Text);
+}
+
+.main {
+    padding: 20px;
+    border: 5px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.search-container {
+    border: 5px solid;
+    width: 80%;
+    margin: 10px;
+    padding:10px;
+    gap:8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input,select{
+    padding: 8px 0px 8px 8px;
+    border: 2px solid var(--Buttons);
+    border-radius: 14px;
+    
 }

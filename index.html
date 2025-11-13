@@ -9,12 +9,38 @@
 </head>
 
 <body>
-    
-        <div class="header">
-            <img src="assets/logo-2.png" alt="Recipe Finder Logo" width=40px></img>
-            <h2>Recipe Finder</h2>
+
+    <div class="header">
+
+        <img src="assets/logo-2.png" alt="Recipe Finder Logo" width=40px></img>
+        <h2>Recipe Finder</h2>
+
+    </div>
+    <div class="main">
+        <div class="search-container">
+            
+            <input type="text" id="search-input" placeholder="Search for recipes...">
+            <div class="select">
+                <select name="cuisine" id="cuisine-select">
+                <option value="indian">Indian</option>
+                <option value="italian">Italian</option>
+                <option value="chinese">Chinese</option>
+                <option value="mexican">Mexican</option>
+                <option value="french">French</option>
+            </select>
+            <select name="meal-type" id="meal-type-select">
+                <option value="vegeterian">Vegetarian</option>
+                <option value="non-vegeterian">non-Vegeterian</option>
+                <option value="vegan">Vegan</option>
+                <option value="gluten-free">Gluten-Free</option>
+            </select>
+            </div>
+            
+            <button id="search-button">Search</button>
         </div>
-    
+    </div>
+
+
 </body>
 
 </html>
