@@ -1,6 +1,6 @@
 :root {
     --Background: #f1f6df;
-    --Primary: #7bae7f;
+    --Primary: #7bae7f72;
     --Buttons: #2F5D50;
     --Text: #2B2B2B;
 }
@@ -36,26 +36,59 @@ img {
     border: 5px solid;
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
-    align-items:center;
+    justify-content: flex-start;
+    align-items: center;
     height: 80vh;
     overflow-y: auto;
 }
 
 .search-container {
-    border: 5px solid;
-    width: 80%;
+    /* border: 5px solid; */
+    border-radius: 33px;
+    width: 30%;
     margin: 10px;
-    padding:10px;
-    gap:8px;
+    padding: 24px;
+    gap: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--Primary);
 }
-input,select{
+input,select {
     padding: 8px 0px 8px 8px;
     border: 2px solid var(--Buttons);
     border-radius: 14px;
-    
+}
+
+input {
+    width: 70%;
+}
+
+.select {
+    width: 70%;
+    display: flex;
+    gap: 5px;
+}
+
+#cuisine-select {
+    width: 50%;
+}
+
+#meal-type-select {
+    width: 50%;
+}
+
+button {
+    background-color: var(--Buttons);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #47645c;
 }
