@@ -9,37 +9,90 @@
 </head>
 
 <body>
+    <header>
+        <div class="header">
 
-    <div class="header">
+            <img src="assets/logo-2.png" alt="Recipe Finder Logo" width=40px></img>
+            <h2>Recipe Finder</h2>
 
-        <img src="assets/logo-2.png" alt="Recipe Finder Logo" width=40px></img>
-        <h2>Recipe Finder</h2>
-
-    </div>
-    <div class="main">
+        </div>
+    </header>
+    <main>
+        <div class="main">
         <div class="search-container">
-            
-            <input type="text" id="search-input" placeholder="Search for recipes...">
+
+            <input type="text" class="search-input" id="search-input" placeholder="Search for recipes...">
             <div class="select">
                 <select name="cuisine" id="cuisine-select">
-                <option value="indian">Indian</option>
-                <option value="italian">Italian</option>
-                <option value="chinese">Chinese</option>
-                <option value="mexican">Mexican</option>
-                <option value="french">French</option>
-            </select>
-            <select name="meal-type" id="meal-type-select">
-                <option value="vegeterian">Vegetarian</option>
-                <option value="non-vegeterian">non-Vegeterian</option>
-                <option value="vegan">Vegan</option>
-                <option value="gluten-free">Gluten-Free</option>
-            </select>
+                    <option value="all-cuisine">All Cuisine</option>
+                    <option value="indian">Indian</option>
+                    <option value="italian">Italian</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="french">French</option>
+                </select>
+                <select name="meal-type" id="meal-type-select">
+                    <option value="all-meal-type">All Meal Type</option>
+                    <option value="vegeterian">Vegetarian</option>
+                    <option value="non-vegeterian">non-Vegeterian</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="gluten-free">Gluten-Free</option>
+                </select>
             </div>
-            
+
             <button id="search-button">Search</button>
         </div>
-    </div>
+        <div class="recipes-container">
+            <!-- Recipes will be displayed here -->
 
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="footer">
+        <!-- Section 1: Copyright -->
+        <div class="footer-col">
+            <h3>© 2025 Recipe Finder. All rights reserved.</h3>
+        </div>
+
+        <!-- Section 2: Credit -->
+        <div class="footer-col">
+            <p>Made by <span>Aviral Tripathi 💻</span></p>
+        </div>
+
+        <!-- Section 3: Social Links -->
+        <div class="footer-col contact">
+            <a href="mailto:tripathiaviral24@gmail.com" class="icon-link" aria-label="Email">
+                <!-- SVG Icon for Email -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M1.946 9.315c.522-.174 1.103-.349 1.767-.522C4.636 8.418 6.22 8.003 8 8.003s3.364.415 4.287 1.11c.923.695 1.767 1.574 1.767 1.574s-.349 1.767-1.54 2.404C11.45 13.79 10.292 14 9 14c-.655 0-1.284-.06-1.883-.176l-.428.183A.8.8 0 0 1 6 13.48V12a.8.8 0 0 1 .8-.8h.592C5.978 10.58 5.098 10.02 4.09 9.516c-.473-.236-.96-.482-1.458-.732a.8.8 0 0 1-.684-1.3S1.424 9.489 1.946 9.315zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z" />
+                    <path
+                        d="M15 12a.8.8 0 0 1 .8-.8h.592c1.993 0 2.873.56 3.88 1.072.508.25.995.498 1.458.732a.8.8 0 0 1 .684 1.3s-.255.125-.684.349c-.522.174-1.103.349-1.767.522-1.144.364-2.177.6-3.23.867-1.054.267-2.115.3-3.216.039-.126-.03-.251-.061-.375-.094l-.428-.183A.8.8 0 0 1 9 13.48V12a.8.8 0 0 1 .8-.8h.592c.923-.695 1.767-1.574 1.767-1.574s.844.879 1.767 1.574z" />
+                </svg>
+                <span>Email</span>
+            </a>
+            <a href="https://github.com/aviral-2005" target="_blank" class="icon-link" aria-label="Github">
+                <!-- SVG Icon for Github -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.492.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.82c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.379.201 2.398.098 2.65.64.7 1.03 1.595 1.03 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0 0 22 12c0-5.523-4.477-10-10-10z"
+                        clip-rule="evenodd" />
+                </svg>
+                <span>Github</span>
+            </a>
+            <a href="https://www.linkedin.com/in/aviral-tripathi-951465202/" target="_blank" class="icon-link" aria-label="LinkedIn">
+                <!-- SVG Icon for LinkedIn -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.783-1.75-1.75s.784-1.75 1.75-1.75 1.75.783 1.75 1.75-.783 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+                <span>LinkedIn</span>
+            </a>
+        </div>
+    </div>
+    </footer>
+    
 
 </body>
 
